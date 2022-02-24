@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gbeto21/CompleteNodeJSDeveloperCourse_Notes/issues"
   },
-  "homepage": "https://github.com/gbeto21/CompleteNodeJSDeveloperCourse_Notes#readme"
+  "homepage": "https://github.com/gbeto21/CompleteNodeJSDeveloperCourse_Notes#readme",
+  "dependencies": {
+    "validator": "^13.7.0"
+  }
 }
