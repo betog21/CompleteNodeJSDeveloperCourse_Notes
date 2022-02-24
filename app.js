@@ -1,5 +1,7 @@
-const validator = require("validator");
-const getNotes = require("./notes");
+// import chalk from "chalk";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const getNotes = require("./notes.js");
 
-getNotes();
-console.log(validator.isURL("example@examplem"));
+// getNotes();
+// console.log(chalk.blue("BLUE!"));

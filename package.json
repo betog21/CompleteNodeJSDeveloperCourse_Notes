@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Notes app from the course: [\"The Complete Node.js Developer Course (3rd Edition)\"](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/gbeto21/CompleteNodeJSDeveloperCourse_Notes#readme",
   "dependencies": {
+    "chalk": "^5.0.0",
     "validator": "^13.7.0"
   }
 }
