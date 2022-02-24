@@ -1,7 +1,5 @@
-const add = require("./utils");
-const getNotes  = require("./notes");
+const validator = require("validator");
+const getNotes = require("./notes");
 
-// const sum = add(4, 2);
-
-// console.log(sum);
-console.log(getNotes());
+getNotes();
+console.log(validator.isURL("example@examplem"));
