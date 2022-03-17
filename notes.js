@@ -34,6 +34,12 @@ const removeNote = (title) => {
     : console.log(chalk.red("No note found."));
 };
 
+const listNotes = () => {
+  const notes = loadNotes()
+  console.log(chalk.yellow.bold("Your notes:"));
+  console.table(notes)
+};
+
 const loadNotes = function () {
   try {
     const dataBuffer = fs.readFileSync("notes.json");
@@ -49,4 +55,4 @@ const saveNotes = function (notes) {
   fs.writeFileSync("notes.json", dataJSON);
 };
 
-module.exports = { getNotes, addNote, removeNote };
+module.exports = { getNotes, addNote, removeNote, listNotes };
