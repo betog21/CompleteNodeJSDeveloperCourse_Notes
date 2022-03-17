@@ -35,9 +35,9 @@ const removeNote = (title) => {
 };
 
 const listNotes = () => {
-  const notes = loadNotes()
+  const notes = loadNotes();
   console.log(chalk.yellow.bold("Your notes:"));
-  console.table(notes)
+  console.table(notes, ["title"]);
 };
 
 const loadNotes = function () {
