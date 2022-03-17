@@ -1,8 +1,10 @@
 const fs = require("fs");
 const chalk = require("chalk");
 
-const getNotes = function () {
-  return "Getting notes";
+const readNote = function (title) {
+  const notes = loadNotes();
+  const note = notes.find((note) => note.title == title);
+  note ? console.table(note) : console.log(chalk.red("Note not foud."));
 };
 
 const addNote = function (title, body) {
@@ -55,4 +57,4 @@ const saveNotes = function (notes) {
   fs.writeFileSync("notes.json", dataJSON);
 };
 
-module.exports = { getNotes, addNote, removeNote, listNotes };
+module.exports = { readNote, addNote, removeNote, listNotes };
